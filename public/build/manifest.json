@@ -1,0 +1,44 @@
+{
+  "__plugin-vue_export-helper-c27b6911.js": {
+    "file": "assets/_plugin-vue_export-helper-c27b6911.js"
+  },
+  "resources/js/Pages/Index.vue": {
+    "file": "assets/Index-7d59087a.js",
+    "imports": [
+      "__plugin-vue_export-helper-c27b6911.js",
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Index.vue"
+  },
+  "resources/js/Pages/Main.vue": {
+    "file": "assets/Main-c80544ff.js",
+    "imports": [
+      "__plugin-vue_export-helper-c27b6911.js",
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Main.vue"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-1c9bb5c0.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-1c9bb5c0.css"
+    ],
+    "dynamicImports": [
+      "resources/js/Pages/Index.vue",
+      "resources/js/Pages/Main.vue"
+    ],
+    "file": "assets/app-a725ceb4.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/scss/app.sass": {
+    "file": "assets/app-0eef9453.css",
+    "isEntry": true,
+    "src": "resources/scss/app.sass"
+  }
+}
