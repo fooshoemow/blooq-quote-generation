@@ -1,0 +1,32 @@
+.quote-table {
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.quote-table th p {
+    display: inline-block;
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+
+.quote-table td {
+    padding: 10px;
+}
+
+.quote-table tr:not(:first-child) {
+    border-top: none;
+}
+
+.quote-table thead {
+    border-bottom: 1px solid grey;
+}
+
+.quote-table tbody tr:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

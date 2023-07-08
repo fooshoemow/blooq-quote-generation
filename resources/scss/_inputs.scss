@@ -1,0 +1,15 @@
+.quote-input-error {
+    border-color: red!important;
+}
+
+.quote-input-error::placeholder {
+    color: red!important;
+}
+
+.quote-input-error:-ms-input-placeholder {
+    color: red!important;
+}
+
+.quote-input-error::-ms-input-placeholder {
+    color: red!important;
+}

@@ -21,5 +21,11 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 
     Route::group(['middleware' => 'auth:sanctum'], function () {
         Route::get('/home', 'Controller@home')->name('home');
+
+        //Quotes
+        Route::get('/quotes-view', 'Controller@quoteView')->name('quote-view');
+        Route::get('/quotes/{id}/edit', 'Controller@quoteEdit')->name('quote-edit');
+        Route::get('/quotes-create', 'Controller@quoteCreate')->name('quote-create');
+        Route::post('/quotes-create', 'Controller@quoteCreateSubmit')->name('quote-create-submit');
     });
 });

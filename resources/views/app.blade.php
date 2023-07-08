@@ -6,9 +6,9 @@
 </head>
 <body>
 @if(\Illuminate\Support\Facades\Auth::user() != null)
-{{--    @include('layout.partials.navbar')--}}
+    @include('layout.partials.navbar')
 @endif
-<div style="background-color: white" class="content">
+<div class="content bg-gray-100" style="padding: 50px 20px">
     @inertia
 </div>
 </body>

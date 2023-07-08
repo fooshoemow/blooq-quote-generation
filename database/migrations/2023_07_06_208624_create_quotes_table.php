@@ -14,7 +14,7 @@ return new class extends Migration
             $table->unsignedBigInteger('client_id');
             $table->unsignedBigInteger('status_id');
             $table->string('currency');
-            $table->string('quote_number')->nullable();
+            $table->string('number')->nullable();
             $table->timestamps();
 
             $table->foreign('client_id')
@@ -31,6 +31,8 @@ return new class extends Migration
 
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('quotes');
+        Schema::enableForeignKeyConstraints();
     }
 };

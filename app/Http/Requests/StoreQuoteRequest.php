@@ -24,8 +24,9 @@ class StoreQuoteRequest extends FormRequest
     {
         return [
             'title' => ['required'],
-            'client_id' => ['required'],
-            'number' => ['required'],
+            'client_name' => ['required'],
+            'contact_name' => ['required'],
+            'contact_email' => ['required'],
             'currency' => [
                 'required',
                 Rule::in(array_column(config('currencies'), 'code')),
