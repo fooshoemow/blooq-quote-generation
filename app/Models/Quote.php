@@ -15,7 +15,11 @@ class Quote extends Model
 
     protected static function booted() {
         static::creating(function ($quote) {
-            $quote->number = 'QT-' . str_pad(static::count() + 1, 5, "0", STR_PAD_LEFT);
+            $quote->number = 'QT-' . str_pad(
+                static::count() + 1,
+                5, "0",
+                STR_PAD_LEFT,
+            );
         });
     }
 

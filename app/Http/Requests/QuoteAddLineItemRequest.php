@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
+
 class QuoteAddLineItemRequest extends FormRequest
 {
     /**
@@ -11,8 +12,7 @@ class QuoteAddLineItemRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
-    {
+    public function authorize() {
         return \Illuminate\Support\Facades\Auth::check();
     }
 
@@ -21,8 +21,7 @@ class QuoteAddLineItemRequest extends FormRequest
      *
      * @return array
      */
-    public function rules()
-    {
+    public function rules() {
         return [
             'supplier' => 'required|max:255',
             'name' => 'required|max:255',
