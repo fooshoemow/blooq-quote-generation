@@ -18,4 +18,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//Route::post();
+Route::group(['middleware' => 'auth', 'namespace' => 'App\Http\Controllers'], function () {
+    Route::post('/quotes-create', 'ApiController@quoteCreateSubmit')->name('quote-create-submit');
+    Route::post('/quotes-update', 'ApiController@quoteUpdate')->name('quote-update');
+    Route::delete('/quotes-delete', 'ApiController@quoteDelete')->name('quote-delete');
+    Route::post('/quotes-add-line-item', 'ApiController@quoteAddLineItem')->name('quote-add-line-item');
+});

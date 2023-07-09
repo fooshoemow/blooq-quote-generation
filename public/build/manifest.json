@@ -3,7 +3,7 @@
     "file": "assets/_plugin-vue_export-helper-c27b6911.js"
   },
   "resources/js/Pages/Index.vue": {
-    "file": "assets/Index-6333a681.js",
+    "file": "assets/Index-43d0ceb8.js",
     "imports": [
       "__plugin-vue_export-helper-c27b6911.js",
       "resources/js/app.js"
@@ -12,7 +12,7 @@
     "src": "resources/js/Pages/Index.vue"
   },
   "resources/js/Pages/Main.vue": {
-    "file": "assets/Main-317ce0c1.js",
+    "file": "assets/Main-b74184bf.js",
     "imports": [
       "__plugin-vue_export-helper-c27b6911.js",
       "resources/js/app.js"
@@ -21,7 +21,7 @@
     "src": "resources/js/Pages/Main.vue"
   },
   "resources/js/Pages/Quote-Creation.vue": {
-    "file": "assets/Quote-Creation-c504366e.js",
+    "file": "assets/Quote-Creation-5a9cd9c2.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper-c27b6911.js"
@@ -37,7 +37,7 @@
     "css": [
       "assets/Quote-Edit-e3b0c442.css"
     ],
-    "file": "assets/Quote-Edit-19d20c7a.js",
+    "file": "assets/Quote-Edit-199c03bf.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper-c27b6911.js"
@@ -46,7 +46,7 @@
     "src": "resources/js/Pages/Quote-Edit.vue"
   },
   "resources/js/Pages/Quote-View.vue": {
-    "file": "assets/Quote-View-ec9c7c32.js",
+    "file": "assets/Quote-View-6667a02a.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper-c27b6911.js"
@@ -69,12 +69,12 @@
       "resources/js/Pages/Quote-Edit.vue",
       "resources/js/Pages/Quote-View.vue"
     ],
-    "file": "assets/app-c6bf7200.js",
+    "file": "assets/app-8c02f153.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/scss/app.scss": {
-    "file": "assets/app-0fa7bb64.css",
+    "file": "assets/app-c0944bc9.css",
     "isEntry": true,
     "src": "resources/scss/app.scss"
   }

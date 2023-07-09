@@ -15,7 +15,6 @@ use Symfony\Component\HttpFoundation\Request;
 
 class Controller extends BaseController
 {
-//    TODO: Properly manage the currencies like in the spec
     use AuthorizesRequests, ValidatesRequests;
 
     public function welcome() {
@@ -74,29 +73,6 @@ class Controller extends BaseController
             'user' => Auth::user(),
             'currencies' => collect(config('currencies'))->pluck('code')->toArray(),
         ]);
-    }
-
-    public function quoteCreateSubmit(StoreQuoteRequest $request) {
-        $quoteDetails = $request->all();
-
-        $client = Client::query()
-            ->where('name', $quoteDetails['client_name'])
-            ->where('contact_name', $quoteDetails['contact_name'])
-            ->where('contact_email', $quoteDetails['contact_email'])
-            ->firstOrCreate([
-                'name' => $quoteDetails['client_name'],
-                'contact_name' => $quoteDetails['contact_name'],
-                'contact_email' => $quoteDetails['contact_email'],
-            ]);
-        $client->save();
-
-        $quoteDetails['client_id'] = $client->id;
-        $quoteDetails['status_id'] = 1;
-
-        $quote = new Quote($quoteDetails);
-        $quote->save();
-
-        return redirect()->route('quote-view')->with('message', 'Quote Created Successfully');
     }
 
     public function quoteEdit($id) {

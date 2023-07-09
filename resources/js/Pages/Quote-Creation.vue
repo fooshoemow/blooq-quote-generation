@@ -59,7 +59,7 @@ export default {
     },
     methods: {
         createQuote() {
-            Inertia.post('/quotes-create', this.quote, {
+            Inertia.post('/api/quotes-create', this.quote, {
                 onError: (error) => {
                     for (let errorKey in error) {
                         let errorField = $('#'+errorKey);

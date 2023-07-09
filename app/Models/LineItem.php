@@ -11,6 +11,7 @@ class LineItem extends Model
 
     protected $table = 'line_items';
     protected $fillable = [
+        'supplier',
         'name',
         'description',
         'quantity',

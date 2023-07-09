@@ -11,6 +11,7 @@ return new class extends Migration
         Schema::create('line_items', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('supplier');
             $table->text('description')->nullable();
             $table->decimal('quantity', 8, 2);
             $table->string('currency_code');
