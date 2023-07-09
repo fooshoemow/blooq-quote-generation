@@ -5,6 +5,7 @@ namespace App\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
+
 class StoreQuoteRequest extends FormRequest
 {
     /**
@@ -20,8 +21,7 @@ class StoreQuoteRequest extends FormRequest
      *
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array|string>
      */
-    public function rules()
-    {
+    public function rules() {
         return [
             'title' => ['required'],
             'client_name' => ['required'],
@@ -34,8 +34,7 @@ class StoreQuoteRequest extends FormRequest
         ];
     }
 
-    public function messages()
-    {
+    public function messages() {
         return [
             'currency.required' => 'The currency field is required.',
             'currency.in' => 'The selected currency is invalid.',

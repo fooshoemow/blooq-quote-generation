@@ -46,17 +46,17 @@ class ApiController extends BaseController
     }
 
 
-    public function quoteUpdate(QuoteUpdateRequest $request)
-    {
+    public function quoteUpdate(QuoteUpdateRequest $request) {
         $quote = Quote::findOrFail($request->id);
         $quote->update($request->validated());
+
         return response()->json($quote);
     }
 
-    public function quoteDelete(QuoteDeleteRequest $request)
-    {
+    public function quoteDelete(QuoteDeleteRequest $request) {
         $quote = Quote::findOrFail($request->id);
         $quote->delete();
+
         return response()->json(null, 204);
     }
 
