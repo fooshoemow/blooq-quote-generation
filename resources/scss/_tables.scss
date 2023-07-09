@@ -30,3 +30,17 @@
     background-color: #f0f0f0;
     cursor: pointer;
 }
+
+.quote-table-status-sent {
+    background-color: #d2fed2;
+    border: #70ff70 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.quote-table-status-draft {
+    background-color: #fdf6d3;
+    border: #fae474 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+}

@@ -9,9 +9,7 @@
                         <th><p>Title</p></th>
                         <th><p>Client Name</p></th>
                         <th><p>Contact Name</p></th>
-                        <th><p>Total</p></th>
                         <th><p>Status</p></th>
-                        <th><p>Created</p></th>
                         <th></th>
                     </tr>
                     </thead>
@@ -21,9 +19,9 @@
                         <td>{{ quote.title }}</td>
                         <td>{{ quote.client_name }}</td>
                         <td>{{ quote.contact_name }}</td>
-                        <td>{{ quote.total }} {{ quote.currency }}</td>
-                        <td>{{ quote.status }}</td>
-                        <td>{{ formatDate(quote.created_at) }}</td>
+                        <td>
+                            <p :class="quote.status === 'Draft' ? 'quote-table-status-draft' : 'quote-table-status-sent'">{{ quote.status }}</p>
+                        </td>
                         <td><button class="btn-edit" @click="openEditPage(quote.id)">Edit</button></td>
                     </tr>
                     </tbody>

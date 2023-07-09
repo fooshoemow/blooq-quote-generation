@@ -60,16 +60,13 @@ class Controller extends BaseController
                     'title' => $quote->title,
                     'client_name' => $quote->client->name,
                     'contact_name' => $quote->client->contact_name,
-                    'total' => $quote->lineItems->sum('total'),
                     'currency' => $quote->currency,
                     'status' => $quote->status->name,
                     'created_at' => $quote->created_at->format('M d, Y'),
                 ];
             });
 
-        return Inertia::render('Quote-View', [
-            'quotes' => $quotes,
-        ]);
+        return Inertia::render('Quote-View', ['quotes' => $quotes]);
     }
 
     public function quoteCreate() {
