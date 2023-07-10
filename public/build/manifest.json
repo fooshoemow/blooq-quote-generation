@@ -3,7 +3,7 @@
     "file": "assets/_plugin-vue_export-helper-c27b6911.js"
   },
   "resources/js/Pages/Index.vue": {
-    "file": "assets/Index-43d0ceb8.js",
+    "file": "assets/Index-29a001a2.js",
     "imports": [
       "__plugin-vue_export-helper-c27b6911.js",
       "resources/js/app.js"
@@ -12,7 +12,7 @@
     "src": "resources/js/Pages/Index.vue"
   },
   "resources/js/Pages/Main.vue": {
-    "file": "assets/Main-b74184bf.js",
+    "file": "assets/Main-2de2009e.js",
     "imports": [
       "__plugin-vue_export-helper-c27b6911.js",
       "resources/js/app.js"
@@ -21,7 +21,7 @@
     "src": "resources/js/Pages/Main.vue"
   },
   "resources/js/Pages/Quote-Creation.vue": {
-    "file": "assets/Quote-Creation-5a9cd9c2.js",
+    "file": "assets/Quote-Creation-65faa0bb.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper-c27b6911.js"
@@ -29,15 +29,8 @@
     "isDynamicEntry": true,
     "src": "resources/js/Pages/Quote-Creation.vue"
   },
-  "resources/js/Pages/Quote-Edit.css": {
-    "file": "assets/Quote-Edit-e3b0c442.css",
-    "src": "resources/js/Pages/Quote-Edit.css"
-  },
   "resources/js/Pages/Quote-Edit.vue": {
-    "css": [
-      "assets/Quote-Edit-e3b0c442.css"
-    ],
-    "file": "assets/Quote-Edit-199c03bf.js",
+    "file": "assets/Quote-Edit-2ae61423.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper-c27b6911.js"
@@ -46,7 +39,7 @@
     "src": "resources/js/Pages/Quote-Edit.vue"
   },
   "resources/js/Pages/Quote-View.vue": {
-    "file": "assets/Quote-View-6667a02a.js",
+    "file": "assets/Quote-View-f0c9c61e.js",
     "imports": [
       "resources/js/app.js",
       "__plugin-vue_export-helper-c27b6911.js"
@@ -55,12 +48,12 @@
     "src": "resources/js/Pages/Quote-View.vue"
   },
   "resources/js/app.css": {
-    "file": "assets/app-247dbb6d.css",
+    "file": "assets/app-68ee1e3c.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-247dbb6d.css"
+      "assets/app-68ee1e3c.css"
     ],
     "dynamicImports": [
       "resources/js/Pages/Index.vue",
@@ -69,12 +62,12 @@
       "resources/js/Pages/Quote-Edit.vue",
       "resources/js/Pages/Quote-View.vue"
     ],
-    "file": "assets/app-8c02f153.js",
+    "file": "assets/app-2d9a971f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/scss/app.scss": {
-    "file": "assets/app-c0944bc9.css",
+    "file": "assets/app-452df187.css",
     "isEntry": true,
     "src": "resources/scss/app.scss"
   }

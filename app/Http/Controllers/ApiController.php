@@ -41,7 +41,8 @@ class ApiController extends BaseController
         $quote = new Quote($quoteDetails);
         $quote->save();
 
-        return redirect()->route('quote-view')->with('message', 'Quote Created Successfully');
+        return response()->json($quote);
+//        return redirect()->route('quote-view')->with('message', 'Quote Created Successfully');
     }
 
 

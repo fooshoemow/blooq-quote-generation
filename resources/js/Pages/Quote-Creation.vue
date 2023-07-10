@@ -6,22 +6,22 @@
                 <p>{{ status }}</p>
                 <div class="mb-4">
                     <label class="text-gray-600">Quote Title</label>
-                    <input type="text" id="title" v-model="quote.title" class="w-full px-3 py-2 mt-1 border rounded-md text-gray-600" placeholder="Quote title">
+                    <input type="text" id="title" v-model="quote.title" class="w-full px-3 py-2 mt-1 border rounded-md text-gray-600" placeholder="Quote title" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="text-gray-600">Client Name</label>
-                    <input type="text" id="client_name" v-model="quote.client_name" class="w-full px-3 py-2 mt-1 border rounded-md text-gray-600" placeholder="Client name">
+                    <input type="text" id="client_name" v-model="quote.client_name" class="w-full px-3 py-2 mt-1 border rounded-md text-gray-600" placeholder="Client name" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="text-gray-600">Client Contact Name</label>
-                    <input type="text" id="contact_name" v-model="quote.contact_name" class="w-full px-3 py-2 mt-1 border rounded-md text-gray-600" placeholder="Contact name">
+                    <input type="text" id="contact_name" v-model="quote.contact_name" class="w-full px-3 py-2 mt-1 border rounded-md text-gray-600" placeholder="Contact name" required>
                 </div>
 
                 <div class="mb-4">
                     <label class="text-gray-600">Client Contact Email</label>
-                    <input type="email" id="contact_email" v-model="quote.contact_email" class="w-full px-3 py-2 mt-1 border rounded-md text-gray-600" placeholder="Contact email">
+                    <input type="email" id="contact_email" v-model="quote.contact_email" class="w-full px-3 py-2 mt-1 border rounded-md text-gray-600" placeholder="Contact email" required>
                 </div>
 
                 <div class="mb-4">
@@ -59,8 +59,15 @@ export default {
     },
     methods: {
         createQuote() {
-            Inertia.post('/api/quotes-create', this.quote, {
-                onError: (error) => {
+            $.ajax({
+                url: '/api/quotes-create',
+                type: 'POST',
+                data: this.quote,
+                success: function(quote) {
+                    Inertia.visit('/quotes-view');
+                },
+                error: function(xhr) {
+                    let error = xhr.responseJSON;
                     for (let errorKey in error) {
                         let errorField = $('#'+errorKey);
 
